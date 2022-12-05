@@ -10,7 +10,7 @@ public class Day1_Silver {
     public static void main(String[] args) {
         int sumaInt = 0;
         int max = 0;
-        File f = new File("src/Day1/output.txt");
+        File f = new File("aoc-22/src/Day1/example.txt");
 
         try {
             Scanner entrada = new Scanner(f);
