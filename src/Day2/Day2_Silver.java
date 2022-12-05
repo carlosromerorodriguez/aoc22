@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Day2_Silver {
         public static void main(String[] args) {
         int resultado = 0;
-        File f = new File("src/Day2/output.txt");
+            File f = new File("aoc-22/src/Day2/example.txt");
 
         try {
             Scanner entrada = new Scanner(f);

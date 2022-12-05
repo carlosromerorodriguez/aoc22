@@ -12,7 +12,7 @@ public class Day1_Gold {
         int i = 0;
         String espacio;
         int[] numeros = new int[2300];
-        File f = new File("src/Day1/output.txt");
+        File f = new File("aoc-22/src/Day1/example.txt");
 
         try {
             Scanner entrada = new Scanner(f);
