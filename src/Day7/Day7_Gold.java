@@ -54,7 +54,7 @@ public class Day7_Gold {
             int min = 0;
             String dir = "";
             for (HashMap.Entry<String, Integer> entry : dirs.entrySet()) {
-                if ((total_space - entry.getValue()) < (70_000_000-40_000_000) && min < (total_space - entry.getValue())) {
+                if ((total_space - entry.getValue()) < (70_000_000-30_000_000) && min < (total_space - entry.getValue())) {
                     min = (int) (total_space - entry.getValue());
                     dir = entry.getKey();
                 }
