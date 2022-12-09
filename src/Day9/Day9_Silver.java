@@ -50,7 +50,7 @@ public class Day9_Silver {
                     }
                 }
             }
-            System.out.println("Output: "+hashtag.size());
+            System.out.println("Output: " + hashtag.size());
 
         } catch (Exception e) {
             throw new RuntimeException(e);
