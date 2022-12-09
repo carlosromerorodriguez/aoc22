@@ -16,10 +16,10 @@ public class Day9_Gold {
             while (entrada.hasNextLine()) {
                 String[] linea = entrada.nextLine().split(" ");
 
-                    if      (linea[0].equals("U")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { moveSnake("U", pointsNine, hashtagsNine); } }
-                    else if (linea[0].equals("D")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { moveSnake("D", pointsNine, hashtagsNine); } }
-                    else if (linea[0].equals("L")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { moveSnake("L", pointsNine, hashtagsNine); } }
-                    else if (linea[0].equals("R")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { moveSnake("R", pointsNine, hashtagsNine); } }
+                    if      (linea[0].equals("U")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { movePosition ("U", pointsNine, hashtagsNine); } }
+                    else if (linea[0].equals("D")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { movePosition ("D", pointsNine, hashtagsNine); } }
+                    else if (linea[0].equals("L")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { movePosition ("L", pointsNine, hashtagsNine); } }
+                    else if (linea[0].equals("R")) { for (int i = 0; i < Integer.parseInt(linea[1]); i++) { movePosition ("R", pointsNine, hashtagsNine); } }
             }
             System.out.println("Output: " + hashtagsNine.size());
 
@@ -28,7 +28,7 @@ public class Day9_Gold {
         }
     }
 
-    private static void moveSnake(String s, LinkedList<Point> l, Set<Object> set) {
+    private static void movePosition (String s, LinkedList<Point> l, Set<Object> set) {
         Point head = l.getFirst();
         switch (s) {
             case "U" -> head = new Point(head.x - 1, head.y);
